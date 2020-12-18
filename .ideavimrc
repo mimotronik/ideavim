@@ -1,6 +1,6 @@
 " set leader key
 nnoremap <SPACE> <Nop>
-let mapleader = <SPACE>
+let mapleader = " "
 
 " search
 set hlsearch
@@ -46,24 +46,21 @@ vnoremap Y "+y
 nnoremap <Space>q  :wq!<CR>
 nnoremap <Space>Q  :qa!<CR>
 
-" edit vimrc 编辑ideavim配置文件
-nnoremap <leader>ve :e ~/.ideavimrc<CR>
-nnoremap <leader>vw :w!<CR>
-nnoremap <leader>vs :source ~/.ideavimrc<CR>
+" edit vimrc 编辑ideavim配置文件 貌似没用
+" nnoremap <leader>ve :e ~/.ideavimrc<CR>
+" nnoremap <leader>vw :w!<CR>
+" nnoremap <leader>vs :source ~/.ideavimrc<CR>
 
 
 " Tab operation
 " 后退
 nnoremap <leader>i :action Back<CR>
-
 " 前进
 nnoremap <leader>o :action Forward<CR>
-
-" NextTab 下一个标签
+" NextTab
 " nnoremap <leader>l :action NextTab<CR>
-
-" PreviousTab 上一个标签
-" nnoremap <leader>h :action NextTab<CR>
+" PreviousTab
+" nnoremap <leader>h :action PreviousTab<CR>
 
 " ========== actions ==========
 nnoremap <leader>a :action GotoAction<CR>
@@ -102,3 +99,9 @@ nnoremap <leader>s :action FileStructurePopup<CR>
 
 " 查找使用
 nnoremap U :action FindUsages<CR>
+
+" 调试
+nnoremap <leader>d :action Debug<CR>
+
+" AceJump 需要 AceJump 插件
+nnoremap <leader>j :action AceAction<CR>
