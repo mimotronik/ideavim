@@ -67,9 +67,9 @@ nnoremap <leader>a :action GotoAction<CR>
 
 nnoremap == :action ReformatCode<CR>:action OptimizeImports<CR>
 
-vnoremap = :action ReformatCode<CR> :action OptimizeImports<CR>
+vnoremap = :action ReformatCode<CR>:action OptimizeImports<CR>
 
-nnoremap <leader>l :action ReformatCode<CR> :action OptimizeImports<CR>
+nnoremap <leader>l :action ReformatCode<CR>:action OptimizeImports<CR>
 
 " comment 单行注释
 nnoremap cc :action CommentByLineComment<CR>
