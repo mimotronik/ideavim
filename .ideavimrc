@@ -101,7 +101,7 @@ nnoremap <leader>s :action FileStructurePopup<CR>
 nnoremap U :action FindUsages<CR>
 
 " 调试
-nnoremap <leader>d :action Debug<CR>
+" nnoremap <leader>d :action Debug<CR>
 
 " AceJump
 nnoremap <leader>j :action AceAction<CR>
