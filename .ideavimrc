@@ -47,29 +47,29 @@ nnoremap <Space>q  :wq!<CR>
 nnoremap <Space>Q  :qa!<CR>
 
 " edit vimrc 编辑ideavim配置文件 貌似没用
-" nnoremap <leader>ve :e ~/.ideavimrc<CR>
-" nnoremap <leader>vw :w!<CR>
-" nnoremap <leader>vs :source ~/.ideavimrc<CR>
+" nnoremap <Leader>ve :e ~/.ideavimrc<CR>
+" nnoremap <Leader>vw :w!<CR>
+" nnoremap <Leader>vs :source ~/.ideavimrc<CR>
 
 
 " Tab operation
 " 后退
-nnoremap <leader>i :action Back<CR>
+nnoremap <Leader>i :action Back<CR>
 " 前进
-nnoremap <leader>o :action Forward<CR>
+nnoremap <Leader>o :action Forward<CR>
 " NextTab
-" nnoremap <leader>l :action NextTab<CR>
+" nnoremap <Leader>l :action NextTab<CR>
 " PreviousTab
-" nnoremap <leader>h :action PreviousTab<CR>
+" nnoremap <Leader>h :action PreviousTab<CR>
 
 " ========== actions ==========
-nnoremap <leader>a :action GotoAction<CR>
+nnoremap <Leader>a :action GotoAction<CR>
 
 nnoremap == :action ReformatCode<CR>:action OptimizeImports<CR>
 
 vnoremap = :action ReformatCode<CR>:action OptimizeImports<CR>
 
-nnoremap <leader>l :action ReformatCode<CR>:action OptimizeImports<CR>
+nnoremap <Leader>l :action ReformatCode<CR>:action OptimizeImports<CR>
 
 " comment 单行注释
 nnoremap cc :action CommentByLineComment<CR>
@@ -86,22 +86,22 @@ nnoremap gi :action GotoImplementation<CR>
 nnoremap gd :action GotoDeclaration<CR>
 
 " 全局查找内容
-nnoremap <leader>f :action FindInPath<CR>
+nnoremap <Leader>f :action FindInPath<CR>
 
 " 查找类
-nnoremap <leader>n :action GotoClass<CR>
+nnoremap <Leader>n :action GotoClass<CR>
 
 " SearchEverywhere
-nnoremap <leader>e :action SearchEverywhere<CR>
+nnoremap <Leader>e :action SearchEverywhere<CR>
 
 " 文件结构
-nnoremap <leader>s :action FileStructurePopup<CR>
+nnoremap <Leader>s :action FileStructurePopup<CR>
 
 " 查找使用
 nnoremap U :action FindUsages<CR>
 
 " 调试
-" nnoremap <leader>d :action Debug<CR>
+" nnoremap <Leader>d :action Debug<CR>
 
 " AceJump
-nnoremap <leader>j :action AceAction<CR>
+nnoremap <Leader>j :action AceAction<CR>
