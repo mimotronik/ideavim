@@ -1,6 +1,6 @@
 " set leader key
 nnoremap <SPACE> <Nop>
-let mapleader = <SPACE>
+let mapleader = " "
 
 " search
 set hlsearch
@@ -81,9 +81,14 @@ nnoremap gr :action RenameElement<CR>
 
 " 类似原来的 ctrl + alt + b
 nnoremap gi :action GotoImplementation<CR>
+nnoremap gk :action GotoImplementation<CR>
 
-" 类的声明
+" 进入父类 ctrl + u
+nnoremap gu :action GotoSuperMethod<CR>
+
+" 类的声明 也可以 clrl + 鼠标左键
 nnoremap gd :action GotoDeclaration<CR>
+nnoremap gl :action GotoDeclaration<CR>
 
 " 全局查找内容
 nnoremap <Leader>f :action FindInPath<CR>
