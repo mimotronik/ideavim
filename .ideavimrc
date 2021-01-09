@@ -1,5 +1,5 @@
 " set leader key
-nnoremap <SPACE> <Nop>
+" nnoremap <SPACE> <Nop>
 let mapleader = " "
 
 " search
@@ -23,7 +23,6 @@ nnoremap ; :
 
 " clear the highlighted search result
 nnoremap <Leader>sc :nohlsearch<CR>
-
 
 " Insert mode shortcut
 inoremap <C-h> <Left>
@@ -53,10 +52,10 @@ nnoremap <Space>Q  :qa!<CR>
 
 
 " Tab operation
-" 后退
-nnoremap <Leader>i :action Back<CR>
+" 后退 参考emacs的 p n
+nnoremap gp :action Back<CR>
 " 前进
-nnoremap <Leader>o :action Forward<CR>
+nnoremap gn :action Forward<CR>
 " NextTab
 " nnoremap <Leader>l :action NextTab<CR>
 " PreviousTab
@@ -65,11 +64,12 @@ nnoremap <Leader>o :action Forward<CR>
 " ========== actions ==========
 nnoremap <Leader>a :action GotoAction<CR>
 
-nnoremap == :action ReformatCode<CR>:action OptimizeImports<CR>
+nnoremap == :action ReformatCode<CR>
 
-vnoremap = :action ReformatCode<CR>:action OptimizeImports<CR>
+vnoremap = :action ReformatCode<CR>
 
-nnoremap <Leader>l :action ReformatCode<CR>:action OptimizeImports<CR>
+nnoremap <Leader>l :action ReformatCode<CR>
+nnoremap <Leader>o :action OptimizeImports<CR>
 
 " comment 单行注释
 nnoremap cc :action CommentByLineComment<CR>
