@@ -99,9 +99,6 @@ nnoremap <Leader>n :action GotoClass<CR>
 " SearchEverywhere
 nnoremap <Leader>e :action SearchEverywhere<CR>
 
-" 文件结构
-nnoremap <Leader>s :action FileStructurePopup<CR>
-
 " 查找使用
 nnoremap U :action FindUsages<CR>
 
