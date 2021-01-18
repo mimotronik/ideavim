@@ -1,9 +1,10 @@
 " set leader key
-" nnoremap <SPACE> <Nop>
-let mapleader = " "
+nnoremap <SPACE> <Nop>
+let mapleader = "<SPACE>"
 
 " search
-set hlsearch
+" set hlsearch
+set nohlsearch
 set incsearch
 set smartcase
 set ignorecase
