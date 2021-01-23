@@ -1,6 +1,6 @@
 " set leader key
 nnoremap <SPACE> <Nop>
-let mapleader = "<SPACE>"
+let mapleader = "\<SPACE>"
 
 " search
 " set hlsearch
