@@ -1,3 +1,9 @@
+"==========================================
+" Author:  winterfell
+" Email: mimotronik@gmail.com
+" Desc: ideavim config
+"==========================================
+
 " set leader key
 nnoremap <SPACE> <Nop>
 let mapleader = "\<SPACE>"

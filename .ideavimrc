@@ -1,19 +1,25 @@
+"==========================================
+" Author:  winterfell
+" Email: mimotronik@gmail.com
+" Desc: ideavim config
+"==========================================
+
 " set leader key
 nnoremap <SPACE> <Nop>
 let mapleader = "\<SPACE>"
 
-" search
-" set hlsearch
+" search config
 set nohlsearch
 set incsearch
 set smartcase
 set ignorecase
 set so=5
 
-" plugins
-set easymotion
-set surround
+set showmode
+set history=1000
 
+" plugins
+set surround
 
 " basic key mapping
 nnoremap L $
@@ -34,43 +40,41 @@ inoremap <C-a> <Home>
 inoremap <C-e> <End>
 inoremap <C-d> <Delete>
 
-
-" copy and paste
-noremap <Leader>y "*y
-noremap <Leader>p "*p
-noremap <Leader>P "0p
-vnoremap Y "+y
-
+" easy system clipboard copy/paste
+noremap <space>y "*y
+noremap <space>Y "*Y
+noremap <space>p "*p
+noremap <space>P "*P
 
 " Quit normal mode
-nnoremap <Space>q  :wq!<CR>
-nnoremap <Space>Q  :qa!<CR>
+nnoremap <space>q  :wq!<CR>
+nnoremap <space>Q  :qa!<CR>
+" nnoremap <space>q :action CloseContent<cr>
+" nnoremap <space>Q :action ReopenClosedTab<cr>
 
 " edit vimrc 编辑ideavim配置文件 貌似没用
 " nnoremap <Leader>ve :e ~/.ideavimrc<CR>
 " nnoremap <Leader>vw :w!<CR>
 " nnoremap <Leader>vs :source ~/.ideavimrc<CR>
 
-
-" Tab operation
-" 后退 参考emacs的 p n
+" 后退 和前进 参考emacs的 p n
 nnoremap gp :action Back<CR>
-" 前进
 nnoremap gn :action Forward<CR>
-" NextTab
-" nnoremap <Leader>l :action NextTab<CR>
-" PreviousTab
-" nnoremap <Leader>h :action PreviousTab<CR>
+
+" PreviousTab and NextTab
+nnoremap g[ :action PreviousTab<CR>
+nnoremap g] :action NextTab<CR>
 
 " ========== actions ==========
 nnoremap <Leader>a :action GotoAction<CR>
 
 nnoremap == :action ReformatCode<CR>
-
 vnoremap = :action ReformatCode<CR>
 
 nnoremap <Leader>l :action ReformatCode<CR>
 nnoremap <Leader>o :action OptimizeImports<CR>
+vnoremap <Leader>l :action ReformatCode<CR>
+vnoremap <Leader>o :action OptimizeImports<CR>
 
 " comment 单行注释
 nnoremap cc :action CommentByLineComment<CR>
@@ -87,7 +91,7 @@ nnoremap gk :action GotoImplementation<CR>
 " 进入父类 ctrl + u
 nnoremap gu :action GotoSuperMethod<CR>
 
-" 类的声明 也可以 clrl + 鼠标左键
+" 类的声明 等同 ctrl + 鼠标左键
 nnoremap gd :action GotoDeclaration<CR>
 nnoremap gl :action GotoDeclaration<CR>
 
@@ -103,8 +107,19 @@ nnoremap <Leader>e :action SearchEverywhere<CR>
 " 查找使用
 nnoremap U :action FindUsages<CR>
 
-" 调试
-" nnoremap <Leader>d :action Debug<CR>
-
 " AceJump
 nnoremap <Leader>j :action AceAction<CR>
+
+" debug and run
+nnoremap <space>b :action ToggleLineBreakpoint<cr>
+nnoremap \r :action RunClass<cr>
+nnoremap \R :action Run<cr>
+nnoremap \d :action DebugClass<cr>
+nnoremap \D :action Debug<cr>
+nnoremap \c :action CheckStyleCurrentFileAction<cr>
+
+" built in search looks better
+nnoremap / :action Find<cr>
+vnoremap / :action Find<cr>
+" but preserve ideavim search
+nnoremap g/ /
