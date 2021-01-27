@@ -97,6 +97,18 @@ nnoremap gl :action GotoDeclaration<CR>
 
 " 全局查找内容
 nnoremap <Leader>f :action FindInPath<CR>
+vnoremap <Leader>f :action FindInPath<CR>
+
+" 文件内查找
+nnoremap / :action Find<cr>
+vnoremap / :action Find<cr>
+
+" vim 自带的查找
+nnoremap g/ /
+
+" 文件内替换
+nnoremap <Leader>r :action Replace<CR>
+vnoremap <Leader>r :action Replace<CR>
 
 " 查找类
 nnoremap <Leader>n :action GotoClass<CR>
@@ -117,9 +129,3 @@ nnoremap \R :action Run<cr>
 nnoremap \d :action DebugClass<cr>
 nnoremap \D :action Debug<cr>
 nnoremap \c :action CheckStyleCurrentFileAction<cr>
-
-" built in search looks better
-nnoremap / :action Find<cr>
-vnoremap / :action Find<cr>
-" but preserve ideavim search
-nnoremap g/ /
