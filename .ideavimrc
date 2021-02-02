@@ -121,6 +121,7 @@ nnoremap U :action FindUsages<CR>
 
 " AceJump
 nnoremap <Leader>j :action AceAction<CR>
+nnoremap gj :action AceAction<CR>
 
 " debug and run
 nnoremap <space>b :action ToggleLineBreakpoint<cr>
