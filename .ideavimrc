@@ -86,7 +86,7 @@ nnoremap gr :action RenameElement<CR>
 
 " ctrl + alt + b
 nnoremap gi :action GotoImplementation<CR>
-nnoremap gk :action GotoImplementation<CR>
+" nnoremap gk :action GotoImplementation<CR>
 
 " ctrl + u
 nnoremap gu :action GotoSuperMethod<CR>

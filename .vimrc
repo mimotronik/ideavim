@@ -49,7 +49,7 @@ set shiftwidth=4
 set tabstop=4
 set softtabstop=4                " insert mode tab and backspace use 4 spaces "
 
-set cursorcolumn
+" set cursorcolumn
 set cursorline
 
 set paste
