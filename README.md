@@ -1,2 +1,4 @@
-# ideavim
-idea vim的配置
+# vim config
+vim config: `.vimrc`
+
+ideavim config: `.ideavimrc`
